@@ -17,43 +17,7 @@
 <div class="wrapper">
     <header>
         <h1 class="header">PhotoZoom.js</h1>
-
-        <p class="header">
-            <!-- Facebbok Like -->
-        <div id="fb-root"></div>
-		<script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=173188026140567";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-        <div class="fb-like" data-href="http://arunkumarsekar.github.com/photoZoom/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" style="float:left;"></div>
-        <a href="https://twitter.com/share" class="twitter-share-button"
-           data-url="http://arunkumarsekar.github.com/photoZoom/" data-text="PhotoZoom jQuery Plugin"
-           data-via="9lessons">Tweet</a>
-        <script>!function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (!d.getElementById(id)) {
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "//platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            }
-        }(document, "script", "twitter-wjs");</script>
-       <!-- Place this tag where you want the +1 button to render. -->
-        <div class="g-plusone" data-size="medium" data-href="http://arunkumarsekar.github.com/photoZoom/"></div>
-        
-        <!-- Place this tag after the last +1 button tag. -->
-        <script type="text/javascript">
-          (function() {
-            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-            po.src = 'https://apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-          })();
-        </script>
-        </p>
-
+        <p class="header"></p>
         <ul>
             <li class="download"><a class="buttons" href="https://github.com/arunkumarsekar/photoZoom/zipball/master">Download
                 ZIP</a></li>
@@ -86,13 +50,49 @@
         </p>
     </header>
     <section>
-        <h1>PhotoZoom</h1>
-
+        <h1>
+        	<span style="position:relative;">PhotoZoom</span>
+        	<div class="socialIcons" style="float:right;font-size:12px;">
+                <!-- Facebbok Like -->
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=173188026140567";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-like" data-href="http://arunkumarsekar.github.com/photoZoom/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" style="float:left; margin-right:10px;"></div>
+                <a href="https://twitter.com/share" class="twitter-share-button"
+                   data-url="http://arunkumarsekar.github.com/photoZoom/" data-text="PhotoZoom jQuery Plugin"
+                   data-via="9lessons">Tweet</a>
+                <script>!function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = "//platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");</script>
+               <!-- Place this tag where you want the +1 button to render. -->
+                <div class="g-plusone" data-size="medium" data-href="http://arunkumarsekar.github.com/photoZoom/"></div>
+                
+                <!-- Place this tag after the last +1 button tag. -->
+                <script type="text/javascript">
+                  (function() {
+                    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                    po.src = 'https://apis.google.com/js/plusone.js';
+                    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                  })();
+                </script>
+        	</div>
+        </h1>
+        
+        <div style="clear:both; padding:0px;"></div>
         <p>Simple, lightweight jQuery plugin to show zoomed view of image based on screen dimensions. It simulates photo
             zoom for facebook (Chrome extension).</p>
-
         <h2>Browser Support</h2>
-
         <ul>
             <li>Internet Explorer 7+</li>
             <li>Firefox</li>
