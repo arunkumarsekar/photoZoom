@@ -279,7 +279,44 @@ header li {
 
 	-webkit-box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
 	box-shadow: inset 0px 1px 1px 0 rgba(233,2,38, 1);
+}
 
+header li.greenButton {
+    background: -moz-linear-gradient(center top , #19C40D 0%, #14910B 100%) repeat scroll 0 0 transparent; 
+	background: -webkit-linear-gradient(top, #19C40D 0%,#14910B 100%);
+ 	background: -o-linear-gradient(top, #19C40D 0%,#14910B 100%);
+  	background: -ms-linear-gradient(top, #19C40D 0%,#14910B 100%);
+  	background: linear-gradient(top, #19C40D 0%,#14910B 100%);
+    box-shadow: 0 1px 1px 0 #14910B inset;
+}
+
+header li.blueButton {
+	background: -moz-linear-gradient(center top , #19B6FF 0%, #006699 100%) repeat scroll 0 0 transparent; 
+	background: -webkit-linear-gradient(top, #19B6FF 0%,#006699 100%);
+ 	background: -o-linear-gradient(top, #19B6FF 0%,#006699 100%);
+  	background: -ms-linear-gradient(top, #19B6FF 0%,#006699 100%);
+  	background: linear-gradient(top, #19B6FF 0%,#006699 100%);
+    box-shadow: 0 1px 1px 0 #19B6FF inset;
+}
+
+header li.blueButton:hover{
+  background: #117508;
+  background: -moz-linear-gradient(top, #006699 0%, #005C87 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+  background: -webkit-linear-gradient(top, #006699 0%,#005C87 100%);
+  background: -o-linear-gradient(top, #006699 0%,#005C87 100%);
+  background: -ms-linear-gradient(top, #006699 0%,#005C87 100%);
+  background: linear-gradient(top, #006699 0%,#005C87 100%);
+}
+
+header li.greenButton:hover{
+  background: #117508;
+  background: -moz-linear-gradient(top, #208217 0%, #117508 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#dddddd));
+  background: -webkit-linear-gradient(top, #208217 0%,#117508 100%);
+  background: -o-linear-gradient(top, #208217 0%,#117508 100%);
+  background: -ms-linear-gradient(top, #208217 0%,#117508 100%);
+  background: linear-gradient(top, #208217 0%,#117508 100%);
 }
 
 header li:hover {
@@ -323,11 +360,11 @@ section {
 /* Footer */
 
 footer {
-  width:170px;
-  float:left;
-  position:fixed;
-  bottom:10px;
-	padding-left: 50px;
+	bottom: 20px;
+    float: left;
+    padding-left: 18px;
+    position: fixed;
+    width: 230px;
 }
 
 @media print, screen and (max-width: 960px) {
